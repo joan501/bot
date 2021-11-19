@@ -17,7 +17,7 @@ logging.info('Starting...')
 @app.route('/me', methods=['GET'])
 def send_me():
     """
-    Devuelve información del bot
+    Devuelve información del robot
     """
     me = bot.get_me()
     return json.dumps(me, default=lambda o: o.__dict__, sort_keys=True, indent=4)
